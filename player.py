@@ -10,21 +10,21 @@ class Player:
     """
     def __init__(self, name):
         self.name = name
-        self.round = 12
+        self.round = 0
         self.points = {
-            "einer": 60,
-            "zweier": 1,
-            "dreier": 1,
-            "vierer": 1,
-            "fünfer": 1,
-            "sechser": 1,
+            "einer": None,
+            "zweier": None,
+            "dreier": None,
+            "vierer": None,
+            "fünfer": None,
+            "sechser": None,
             "bonus": None,
-            "dreierpasch": 1,
-            "viererpasch": 1,
-            "full House": 1,
-            "kleine Straße": 1,
-            "große Straße": 1,
-            "kniffel": 1,
+            "dreierpasch": None,
+            "viererpasch": None,
+            "full House": None,
+            "kleine Straße": None,
+            "große Straße": None,
+            "kniffel": None,
             "chance": None
         }
 

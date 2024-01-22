@@ -11,5 +11,5 @@
 
 I have tried to stick to an OOP style, but here and there I lack experience in style and python.
 
-There is more material for this project on Google Drive:
+
 
