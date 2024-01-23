@@ -35,7 +35,9 @@ def state(player):
         # rounds 2 - 3
         for i in range(2):
             print("Deine Würfel Spieler", player.name, ": ", " ".join(map(str, dice.eyes)))
+
             reroll = dice.rethrow()
+
             for index in reroll:
                 dice.eyes[index - 1] = random.randint(1, 6)
         # final eyes

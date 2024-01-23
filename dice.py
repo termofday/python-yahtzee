@@ -30,9 +30,16 @@ class Dice:
 
         :return: [] or ? []
         """
-        rethrow_inp = input("\n Wähle Würfel zum neu Würfeln. Gebe Zahlen von 1 bis 5 mit Leerzeichen ein, Beispiel -> '1 2 3' für die ersten drei Würfel. \n Oder drücke Enter, um alle zu halten.\n")
+        while True:
 
-        if rethrow_inp:
-            return list(map(int, rethrow_inp.split()))
-        else:
-            return []
+            rethrow_inp = input("\n Wähle Würfel zum neu Würfeln. Gebe Zahlen von 1 bis 5 mit Leerzeichen ein, Beispiel -> '1 2 3' für die ersten drei Würfel. \n Oder drücke Enter, um alle zu halten.\n")
+
+            if rethrow_inp:
+                try:
+                    return list(map(int, rethrow_inp.split()))
+                except ValueError:
+                    print("Hier nur Zahlen eingeben. Deine Würfelreihe war: ", " ".join(map(str, self.eyes)))
+            else:
+                return []
+
+

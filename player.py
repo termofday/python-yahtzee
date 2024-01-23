@@ -21,9 +21,9 @@ class Player:
             "bonus": None,
             "dreierpasch": None,
             "viererpasch": None,
-            "full House": None,
-            "kleine Straße": None,
-            "große Straße": None,
+            "fullhouse": None,
+            "kleinestraße": None,
+            "großestraße": None,
             "kniffel": None,
             "chance": None
         }

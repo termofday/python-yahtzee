@@ -66,13 +66,13 @@ class Board:
             if cat == "viererpasch":
                 return pasch(dice, 4)
 
-            if cat == "full house":
+            if cat == "fullhouse":
                 return fullhouse(dice)
 
-            if cat == "kleine straße":
+            if cat == "kleinestraße":
                 return kleine_strasse(dice)
 
-            if cat == "große straße":
+            if cat == "großestraße":
                 return grosse_strasse(dice)
 
             if cat == "kniffel":
